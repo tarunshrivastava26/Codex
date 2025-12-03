@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-size name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Image Classifier</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- TensorFlow JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.0"></script>
+</head>
+<body>
+
+<header>
+    <div class="">
+    <h1>🍎 Fruit Image Classifier</h1>
+    <p>Upload an image to identify the fruit!</p>
+    </div>
+</header>
+
+<div class="container">
+    <input type="file" id="imageUpload" accept="image/*">
+    <br>
+    <img id="preview" src="" alt="Image Preview">
+
+    <button onclick="classifyImage()">Classify Fruit</button>
+
+    <h2>Prediction:</h2>
+    <div id="resultBox">No image uploaded yet.</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
